@@ -2,6 +2,6 @@
 -- # Score: 15
 
 
-SELECT DISTINCT CITY
-FROM STATION
-WHERE REGEXP_LIKE(City, '^[AEIOU].*[aeiou]$');
+select distinct city
+from station
+where city regexp '^[aeiou].*[aeiou]$';
